@@ -4,7 +4,6 @@ fetch('https://adventofcode.com/2020/day/4/input').then(r => {
         const required = ['byr','iyr','eyr','hgt','hcl','ecl','pid'];
         const documents = t.split('\n\n').map(s => s.trim());
         let answer = documents.reduce((total, d) => {
-            if (!s) return total;
             if (!required.some(r => !d.includes(`${r}:`))) {
                 total++;
             }
