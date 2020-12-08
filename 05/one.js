@@ -1,5 +1,6 @@
 //@ts-check
 
+// @ts-ignore
 const getReduction = (str, min, max, i = 0) => {
     const char = str[i];
     const half = (max - min + 1) / 2;
